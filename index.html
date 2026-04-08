@@ -17,22 +17,22 @@
     </style>
     
     <!-- Add Stylesheet link in the <head> of the page -->
-    
+    <link rel="stylesheet" href="_css/format.css" type="text/css"/>
   </head> 
     <body>
       <h1>Cascading StyleSheets (CSS) - Anatomy of a Style</h1>
       <p>In CSS there are three ways to apply styles to an HTML page or pages: (1)&nbsp;inline styles, (2)&nbsp;internal styles, and (3)&nbsp;style sheets. All these ways use CSS Rules which are statements about a particular stylistic aspect of an element or elements.</p>
-      <h2>Example of a Rule</h2>
+      <h2>Example of a <span class="rule">Rule</span></h2>
       
-      <p>A Rule consists of two parts: Selector - that part before 
-      the left curly brace, and Declaration - that part within the curly braces</p>
-      <p>h1 { color:red }</p>
+      <p>A <span class="rule">Rule</span> consists of two parts: <span class="selector">Selector</span> - that part before 
+      the left curly brace, and <span class="declaration">Declaration</span> - that part within the curly braces</p>
+      <p class="rule"><span class="selector">h1</span><span class="declaration">{ color:red }</span> </p>
 
-      <h2>Examples of a Declaration</h2>
+      <h2>Examples of a <span class="declaration">Declaration</span></h2>
 
-      <p>A declaration has two parts separated by a colon: Property - that 
-      part before the colon Value - that part after the colon</p>
-      <p>color:red</p> 
+      <p>A <span class="declaration">declaration</span>has two parts separated by a colon: <span class="property">Property</span> - that 
+      part before the colon <span class="value">Value</span> - that part after the colon</p>
+      <p><span class="property">color</span>:<span class="value">red</span></p> 
 <!-- TODO: add the following inline style into the <h2> tab
            style="color: #CC0000;"
           -->
@@ -42,7 +42,7 @@
         <li>h1 { font-weight: bold }</li>
         <li>h2 { font-weight: bold }</li> 
         <li>h3 { font-weight: bold }  becomes:</li> 
-        <li>h1, h2, h3 { font-weight: bold } </li>
+        <li class="highlight">h1, h2, h3 { font-weight: bold } </li>
       </ul>
 <!-- TODO: add the following inline style into the <h2> tab
            style="color: #CC0000;"
@@ -53,7 +53,7 @@
       <ul>
         <li>h1 { color: red } </li>
         <li>h1 ( text-align: center }  becomes:</li>
-        <li>h1 { color: red; text-align: center; }</li>
+        <li class="highlight">h1 { color: red; text-align: center; }</li>
       </ul>     
   </body>
 </html>
